@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+
 * {
     margin: 0;
     background-color: #EDE5BB;
+    font-family: 'Caveat', cursive
 }
+
+
 
 
 
@@ -19,6 +24,30 @@ header {
 }
 
 
+body{
+    font-family: Caveat, sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+nav{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
 
 
 /*-------------*/
@@ -28,8 +57,17 @@ header {
 .h2Title {
     color: #95261F;
     text-align: center;
+    font-size: 4rem;
 }
 
 #ourSpecialties {
     display: block;
+
+}
+
+.boxes {
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #95261F;
 }

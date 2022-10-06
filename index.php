@@ -18,23 +18,25 @@
 
 
 
-        		$page = "";
+        $page = "";
 
 
-
-		if (isset($_GET['page'])) {
+        if (isset($_GET['page'])) {
             $page = $_GET['page'];
+
         }
 
 
 		if ($page == "Home") {
-            include_once "index.php";
-        } else if ($page =="Menu"){
+            include_once "includes/files/php/startingPage.php";
+        } else if ($page ==="Menu"){
             include_once "includes/files/php/menu.php";
-        } else if ($page =="Newsletter"){
+        } else if ($page ==="Newsletter"){
             include_once "includes/files/php/newsletter.php";
-        } else if ($page =="Video"){
+        } else if ($page ==="Video"){
             include_once "includes/files/php/video.php";
+        }else {
+            include_once "includes/files/php/startingPage.php";
         }
 
         ?>
@@ -43,41 +45,6 @@
 
 
 
-<section id="mainPicture>">
-
-
-
-
-
-
-    <i class="fa-sharp fa-solid fa-arrow-down"></i>
-</section>
-
-
-<section id="ourSpecialties">
-
-        <h2 class="h2Title">Our Specialties</h2>
-
-    <div class="boxes">
-        <h4>Le croissant</h4>
-        <img src="includes/pictures/illustrations/illustrations/croissant/illustrations_yellow_croissant.png" alt="croissant">
-        <p>Our hand made croissant</p>
-    </div>
-
-    <div class="boxes">
-        <h4>Le Thé Francais</h4>
-        <img src="includes/pictures/illustrations/illustrations/tea/illustrations_yellow_tea.png" alt="tea">
-        <p>Tea from France</p>
-    </div>
-
-    <div class="boxes">
-        <h4>Le café Francais </h4>
-        <img src="includes/pictures/illustrations/illustrations/coffee/illustrations_yellow_coffee.png" alt="coffe">
-        <p>Hand brewed coffee</p>
-    </div>
-
-
-</section>
 
 
 </body>
