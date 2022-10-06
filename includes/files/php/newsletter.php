@@ -1,5 +1,13 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newsletter</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head> 
 
+    <body>
+        
+    </body>
 
-echo "Newsletter";
-?>
+</html>
