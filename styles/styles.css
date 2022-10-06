@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    background-color: #EDE5BB;
+}
+
+
+
+/*-----------*/
+/*--header--*/
+/*---------*/
+
+header {
+    display: inline;
+
+}
+
+.navBar {
+    list-style:none;
+}
+
+
+
+
+/*-------------*/
+/*--specialist-*/
+/*------------*/
+
+.h2Title {
+    color: #95261F;
+    text-align: center;
+}
+
+#ourSpecialties {
+    display: block;
+}
