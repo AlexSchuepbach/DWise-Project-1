@@ -34,3 +34,18 @@
 
 
 </section>
+
+
+
+<section id="aboutUs">
+
+        <h2 class="redTitle">About us</h2>
+
+        <p>Welcome to OUI We are glad to have you around us. OUI is a place for all. We have been in existence  for about 8 years. Our cafe use to be a grab-and-go style with less interaction with our customers.
+            We have decided to take our café to the next level, a place to be and a place of relaxation. A place of meeting friends and a place of chilling.
+            OUI is a place to enjoy a homemade coffee in a traditional french style.</p>
+    
+    
+    <img src="../../pictures/IMG_20141109_113100.jpg" alt="Oui Caffe picture">
+
+</section>

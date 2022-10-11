@@ -71,3 +71,21 @@ nav{
     box-sizing: border-box;
     background-color: #95261F;
 }
+
+
+
+/*-------------*/
+/*--About Us---*/
+/*-------------*/
+
+
+
+#aboutUs {
+    background-color: #95261F;
+    z-index: 5;
+}
+.redTitle {
+    color: #EDE5BB;
+    font-size: 4rem;
+
+}
