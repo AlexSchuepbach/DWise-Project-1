@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+ body {
+    margin:0;
+     font-family: 'Caveat', cursive;
+ }
 
-* {
-    margin: 0;
+
+ #content {
     background-color: #EDE5BB;
-    font-family: 'Caveat', cursive
+     display: grid;
+     grid-template-columns: repeat(6,1fr);
+
 }
-
-
-
 
 
 /*-----------*/
@@ -16,36 +19,40 @@
 
 header {
     display: inline;
+    background-color: #681A15;
+    grid-column: 1/7;
 
 }
 
 .navBar {
-    list-style:none;
+    list-style: none;
+    font-size: 1.8rem;
+    color: white;
 }
+.navBa a:link {color: #000;}
+.navBa a:visited {color: #000;}
+.navBa a:hover {color: #93afbf;}
+.navBa  a:active {color: #93afbf;}
 
 
-body{
-    font-family: Caveat, sans-serif;
-}
-
-ul{
+ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
 
-li{
+li {
     margin-left: 6rem;
     margin-right: 6rem;
 }
 
-nav{
+nav {
     width: 100%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -53,15 +60,22 @@ nav{
 /*-------------*/
 /*--specialist-*/
 /*------------*/
-
+#ourSpecialties {
+   display: flex;
+    grid-column: 1/7;
+}
 .h2Title {
     color: #95261F;
     text-align: center;
     font-size: 4rem;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
 }
 
-#ourSpecialties {
-    display: block;
+#speacialtiesContent {
+    display: flex;
 
 }
 
@@ -72,20 +86,30 @@ nav{
     background-color: #95261F;
 }
 
-
+.illustrations {
+    width: 5%;
+}
 
 /*-------------*/
 /*--About Us---*/
 /*-------------*/
 
-
-
+#ouiCaffeImg {
+    width: 5%;
+}
 #aboutUs {
     background-color: #95261F;
     z-index: 5;
 }
+
 .redTitle {
     color: #EDE5BB;
     font-size: 4rem;
 
 }
+#ouiCaffeImg {
+    width: 5%;
+}
+
+
+

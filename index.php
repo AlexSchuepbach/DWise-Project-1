@@ -6,16 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" href="includes/pictures/logos/Logo-02.png" type="image/icon type">
     <title>OUI</title>
 </head>
 <body>
-
+<div id='content'>
     <header>
 
         <?php
 
         include_once "includes/files/html/navbar.html";
 
+        ?>
+
+   </header>
+
+<?php
 
 
         $page = "";
@@ -41,11 +47,12 @@
 
         ?>
 
-    </header>
 
 
 
 
+
+</div>
 
 </body>
 </html>
