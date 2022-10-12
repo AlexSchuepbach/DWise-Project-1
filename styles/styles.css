@@ -11,6 +11,20 @@
      grid-template-columns: repeat(6,1fr);
 
 }
+/*-----------*/
+/*-main pic-*/
+/*----------*/
+
+  #mainPicture {
+      background-image: url("../OUI pictures/t2.jpg");
+      background-size: 100% 100%;
+      /* background-size: auto; */
+      height: 500px;
+      z-index: 50;
+      grid-column: 1/7;
+
+  }
+
 
 
 /*-----------*/
@@ -95,21 +109,105 @@ nav {
 /*-------------*/
 
 #ouiCaffeImg {
-    width: 5%;
+    width: 30%;
+    margin-bottom: 5%;
+    margin-right: 5%;
 }
 #aboutUs {
     background-color: #95261F;
     z-index: 5;
+    grid-column: 1/7;
+    margin-bottom: 10%;
 }
 
 .redTitle {
     color: #EDE5BB;
     font-size: 4rem;
+    text-align: center;
 
 }
-#ouiCaffeImg {
-    width: 5%;
+
+.aboutUs {
+    display: flex;
+    font-size: 5rem;
+}
+.aboutUs > p {
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2rem;
+    color: #EDE5BB;
+    letter-spacing: 3px;
+}
+
+
+/*---------*/
+/*workarea*/
+/*--------*/
+
+
+
+#workAreaImg {
+    width: 30%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+
+}
+#workArea {
+    background-color: #95261F;
+    z-index: 5;
+    grid-column: 1/7;
+    margin-bottom: 10%;
+}
+
+.redTitle {
+    color: #EDE5BB;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.aboutUs {
+    display: flex;
+    font-size: 5rem;
+}
+.aboutUs > p {
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2rem;
+    color: #EDE5BB;
+    letter-spacing: 3px;
 }
 
 
 
+
+
+.aboutUs > img {width: 20%}
+
+
+
+/*-----------*/
+/*--footer--*/
+/*---------*/
+
+
+#footer {
+    background-color: #95261F;
+    z-index: 5;
+    grid-column: 1/7;
+    font-size: 0.8rem;
+    display: flex;
+    color: #EDE5BB;
+}
+
+
+#footer > img {
+    width: 3%;
+}
+
+#footer  > p {
+
+    margin-right: 16.6%;
+}

@@ -55,4 +55,11 @@
 </div>
 
 </body>
+<footer>
+    <?php
+
+    include_once "includes/files/html/footer.html";
+
+    ?>
+</footer>
 </html>
