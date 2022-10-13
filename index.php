@@ -7,7 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="icon" href="includes/pictures/logos/Logo-02.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/0b4a9ad2b3.js" crossorigin="anonymous"></script>
+    <script type="javascript" src="includes/jquery/jquery.js"
     <title>OUI</title>
+
+
+    <script>
+        $(document).ready(function(){
+
+
+            $("#dropDownIcon").on("click" ,function(){
+                scrolled=scrolled+300;
+
+                $(".cover").animate({
+                    scrollTop:  scrolled
+                });
+
+            });
+
+    </script>
 </head>
 <body>
 <div id='content'>

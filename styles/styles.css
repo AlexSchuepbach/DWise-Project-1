@@ -15,15 +15,29 @@
 /*-main pic-*/
 /*----------*/
 
-  #mainPicture {
-      background-image: url("../OUI pictures/t2.jpg");
-      background-size: 100% 100%;
-      /* background-size: auto; */
-      height: 500px;
-      z-index: 50;
-      grid-column: 1/7;
+#mainPicture {
+    background-image: url("../OUI pictures/t2.jpg");
+    background-size: 100% 100%;
+    /* background-size: auto; */
+    height: 1000px;
+    z-index: 50;
+    grid-column: 1/7;
+    justify-content: center;
+    display: flex;
+    /* margin-bottom: auto;*/
 
   }
+
+#dropDownIcon {
+
+    z-index: 100;
+    font-size: 5rem;
+    color: #EDE5BB;
+    /* justify-content: center; */
+    margin-bottom: auto;
+    margin-top: 46%;
+    /* align-self: flex-end; */
+}
 
 
 
@@ -56,8 +70,12 @@ ul {
 }
 
 li {
-    margin-left: 6rem;
-    margin-right: 6rem;
+
+    height: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 nav {
@@ -70,13 +88,20 @@ nav {
     align-items: center;
 }
 
+.link {
+    color: #EDE5BB;
+    text-decoration: none;
+}
 
+li:hover {
+    background-color: #C96059;
+}
 /*-------------*/
 /*--specialist-*/
 /*------------*/
 #ourSpecialties {
    display: flex;
-    grid-column: 1/7;
+    grid-column: 2/6;
 }
 .h2Title {
     color: #95261F;
@@ -85,7 +110,7 @@ nav {
     position: absolute;
     text-align: center;
     align-items: center;
-    margin-left: 40%;
+    margin-left: 25%;
 }
 
 #speacialtiesContent {
@@ -204,10 +229,21 @@ nav {
 
 
 #footer > img {
-    width: 3%;
+    width: 2%;
+    margin-right: 20%;
 }
 
 #footer  > p {
 
-    margin-right: 16.6%;
+    margin-right: 20%;
+}
+#followUs {
+    margin-right: 20%;
+    margin-top: 0.7%;
+    display: flex;
+
+}
+#followUs > i {
+    font-size: 1.2rem;
+    margin-right: 50%;
 }
