@@ -1,0 +1,120 @@
+/*
+12/10/2022
+Notes for Berne + other contributors:
+
+    Remove the unnecessary code
+    Figure out how to style the text inside the forms effectively
+
+-Alex Schuepbach
+*/
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+
+    font-family: sans-serif;
+
+}
+
+#newsContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    justify-content: center;
+
+    background-image: url(/DWise-Project-1/includes/pictures/news-background.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+nav{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type:none;
+    background-color: blueviolet;
+}
+
+.navItem{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: firebrick;
+
+}
+
+#formContainer{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 75%;
+    background-color: #95261F;
+    color: #EDE5BB;
+
+    align-items: center;
+    justify-content: space-evenly;
+    justify-self: center;
+
+}
+
+#newsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 75%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], input[type=email]{
+    width: 75%;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0rem;
+
+    background-color: #EDE5BB;
+    color: #95261F;
+    box-shadow: 0rem 0.12rem 0.2rem #222222;
+
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 0.3rem;
+
+    font-size: 1.5rem;
+}
+
+input[type=button], input[type=submit]{
+    width: 100%;
+
+    background-color: #EDE5BB;
+    color: #95261F;
+    box-shadow: 0rem 0.12rem 0.2rem #222222;
+
+    border-radius: 0.1rem;
+    border: 0px;
+    padding: 0.5rem;
+
+    font-size: 1.5rem;
+}
+
