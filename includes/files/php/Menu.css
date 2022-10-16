@@ -1,0 +1,162 @@
+#container{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	background-image: url("Menu bg 1.png");
+	background-size: cover;
+	max-height: 5000px;
+}
+body{
+	margin:0px;
+}
+
+header {
+    display: inline;
+    Color: #EDE5BB;
+    grid-column: 3/6;
+	font-size: 20px;
+	font-family: Caveat-Regular;
+}
+
+h1{
+	text-align: center;
+}
+
+.navBar {
+    list-style: none;
+    font-size: 1.8rem;
+    color: white;
+	grid-column: 1/8;
+	background-color: #681A15;
+}
+.navBar a:link {color: #EDE5BB;}
+.navBar a:visited {color: #EDE5BB;}
+.navBar a:hover {color: #93afbf;}
+.navBar  a:active {color: #93afbf;}
+
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+	color: #EDE5BB;
+}
+
+.navBar li {
+    height: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+	color: #EDE5BB;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    color: #EDE5BB;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #C96059;
+}
+
+#ouiCaffeImg {
+    width: 30%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.redTitle {
+    color: #EDE5BB;
+    font-size: 4rem;
+    text-align: center;
+}
+
+section .box{
+	background-image: url("eiffel tower.png");
+	background-size: cover;
+	max-height: 2500px;
+}
+
+section{
+	grid-column: 3/6;
+	color: #EDE5BB;
+	font-family: Caveat-Regular;
+}
+
+section li{
+	list-style: none
+}
+
+h2{
+	text-align: center;
+}
+
+#euros{
+	float: left;
+	position: relative;
+	left: 75%;
+	flex-direction: column;
+	bottom: 200px;
+}
+
+#euros1{
+	float: right;
+	position: relative;
+	right: 20%;
+	flex-direction: column;
+	bottom: 250px;
+}
+
+@font-face {
+    font-family: Caveat-Regular;
+    src: url(Caveat-Regular.TTF);
+}
+
+section button{
+	background-color: #EDE5BB;
+	position: relative;
+	font-size: 20px;
+	padding: 10px;
+	font-family: Caveat-Regular;
+	left: 216px;
+	width: 180px;
+}
+
+#footer {
+    background-color: #95261F;
+    z-index: 5;
+    grid-column: 1/8;
+    font-size: 0.8rem;
+    display: flex;
+    color: #EDE5BB;
+}
+
+
+#footer > img {
+    width: 2%;
+    margin-right: 20%;
+}
+
+#footer  > p {
+
+    margin-right: 20%;
+}
+#followUs {
+    margin-right: 20%;
+    margin-top: 0.7%;
+    display: flex;
+
+}
+#followUs > i {
+    font-size: 1.2rem;
+    margin-right: 50%;
+}
