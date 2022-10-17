@@ -6,7 +6,9 @@
         <div class="box">
 
             <h2>Food</h2>
+            <div id="menufood">
             <ul>
+                <div class="food">
                 <li>Pain, Croissant or Petit pain</li>
                 <li>Pain Naturel</li>
                 <li>Butter</li>
@@ -19,23 +21,27 @@
                 <li>Smole Salmon</li>
                 <li>Tuna salad</li>
                 <li>Egg salad</li>
+                </div>
 
-                <div id="euros">
-                    <li>1,30</li>
-                    <li>2,30</li>
-                    <li>2,80</li>
-                    <li>3,30</li>
-                    <li>4,50</li>
-                    <li>4,70</li>
-                    <li>4,80</li>
-                    <li>4,80</li>
-                    <li>5,80</li>
-                    <li>4,80</li>
-                    <li>4,80</li>
+                <div class="euros">
+                    <li>€1,30</li>
+                    <li>€2,30</li>
+                    <li>€2,80</li>
+                    <li>€3,30</li>
+                    <li>€4,50</li>
+                    <li>€4,70</li>
+                    <li>€4,80</li>
+                    <li>€4,80</li>
+                    <li>€5,80</li>
+                    <li>€4,80</li>
+                    <li>€4,80</li>
                 </div>
             </ul>
+            </div>
             <h2>Drinks</h2>
+            <div id="menudrinks">
             <ul>
+                <div class="drinks">
                 <li>Coffee and Tea</li>
                 <li>Cappucinno</li>
                 <li>Latte</li>
@@ -51,25 +57,26 @@
                 <li>Ice Tea</li>
                 <li>Eau Minerale</li>
                 <li>Eau Petillante</li>
+                </div>
 
-                <div id="euros1">
-                    <li>3,00</li>
-                    <li>3,00</li>
-                    <li>3,00</li>
-                    <li>2,00</li>
-                    <li>3,50</li>
-                    <li>2,80</li>
-                    <li>2,00</li>
-                    <li>3,00</li>
-                    <li>2,30</li>
-                    <li>2,30</li>
-                    <li>2,50</li>
-                    <li>2,00</li>
-                    <li>2,30</li>
+                <div class="euros1">
+                    <li>€3,00</li>
+                    <li>€3,00</li>
+                    <li>€3,00</li>
+                    <li>€2,00</li>
+                    <li>€3,50</li>
+                    <li>€2,80</li>
+                    <li>€2,00</li>
+                    <li>€3,00</li>
+                    <li>€2,30</li>
+                    <li>€2,30</li>
+                    <li>€2,50</li>
+                    <li>€2,00</li>
+                    <li>€2,30</li>
                 </div>
             </ul>
+            </div>
             <button id="Button"><p>Download PDF</p></button>
-            </ul>
         </div>
     </section>
 </div>
