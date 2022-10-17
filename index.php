@@ -20,7 +20,7 @@
                 scrolled=scrolled+300;
 
                 $(".cover").animate({
-                    scrollTop:  scrolled
+                    scrollTop:  scrolled;
                 });
 
             });
