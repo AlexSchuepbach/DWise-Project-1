@@ -90,7 +90,7 @@ nav {
     text-decoration: none;
 }
 
-li:hover {
+.pt-5  > li:hover {
     background-color: #C96059;
 }
 /*-------------*/
@@ -396,7 +396,6 @@ input[type=button], input[type=submit] {
     grid-column: 1/7;
     display: flex;
     background-size: 100% 100%;
-    max-width: fit-content;
 }
 
 #menuContainer > h1{
@@ -409,9 +408,6 @@ color: #EDE5BB;
 text-decoration: none;
 }
 
-li:hover {
-background-color: #C96059;
-}
 
 #ouiCaffeImg {
 width: 30%;
@@ -432,6 +428,7 @@ text-align: center;
     grid-column: 4/7;
     margin-top: 11rem;
     width: 500px;
+    margin-left: 12%;
 }
 
 #menuPage{
@@ -446,7 +443,7 @@ text-align: center;
     text-align: center;
 }
 
-#menuPage  > li{
+#menuList  {
 list-style: none
 }
 
@@ -458,6 +455,7 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 260px;
 }
 
 .food{
@@ -469,13 +467,16 @@ text-align: center;
 
 .euros{
     display: flex;
-    position: absolute;
-    left: 60%;
+    position: relative;
+    bottom: 240px;
     flex-direction: column;
-    top: 442px;
-    list-style: none
+    /* top: 442px; */
+    list-style: none;
+    left: 351px;
 }
-
+.euros > li{
+    margin-bottom: 2.2px;
+}
 #menudrinks{
     display: flex;
     justify-content: space-between;
@@ -490,14 +491,17 @@ text-align: center;
 }
 
 .euros1{
-    display: flex;
-    position: absolute;
-    left: 60%;
-    flex-direction: column;
-    top: 790px;
-    list-style: none
-}
 
+    display: flex;
+    position: relative;
+    left: 351px;
+    flex-direction: column;
+    bottom: 300px;
+    list-style: none;
+}
+.euros1 > li {
+    margin-bottom: 3.4px;
+}
 #menuPage button{
     background-color: #EDE5BB;
     position: relative;
@@ -517,7 +521,411 @@ text-align: center;
     /* grid-column: 4/7; */
     position: absolute;
     text-align: center;
-    font-size: 3rem;
-    margin-left: 35%;
+
+    font-size: 4.5rem;
+    margin-left: 37%;
 
 }
+
+
+
+
+
+/*--------------*/
+/*media query -*/
+/*------------*/
+
+
+
+/*-----------*/
+/*---index---*/
+/*-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------*/
+/*---navbar---*/
+/*-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------*/
+/*---Newsletter And Video---*/
+/*-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------*/
+/*---menu---*/
+/*-----------*/
+

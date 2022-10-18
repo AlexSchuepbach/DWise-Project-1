@@ -7,7 +7,7 @@
 
             <h2>Food</h2>
             <div id="menufood">
-            <ul>
+            <ul id="menuList">
                 <div class="food">
                 <li>Pain, Croissant or Petit pain</li>
                 <li>Pain Naturel</li>
