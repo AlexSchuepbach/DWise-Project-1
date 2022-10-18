@@ -390,12 +390,13 @@ input[type=button], input[type=submit] {
 #menuContainer{
 
     background-image: url("../includes/pictures/rsz_1menu_bg_1 (1).png");
-    height: 5000px;
+    height: 1400px;
     background-size: 100vw;
     background-repeat: no-repeat;
     grid-column: 1/7;
     display: flex;
     background-size: 100% 100%;
+    max-width: fit-content;
 }
 
 #menuContainer > h1{
@@ -427,9 +428,10 @@ text-align: center;
 #menuPage .box{
     background-image: url("../OUI pictures/eiffel tower.png");
     background-size: cover;
-    max-height: 2500px;
+    height: 1050px;
     grid-column: 4/7;
     margin-top: 11rem;
+    width: 500px;
 }
 
 #menuPage{
@@ -437,6 +439,11 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(9,1fr);
     width: 100%;
+    color: #EDE5BB;
+}
+
+#menuPage h2{
+    text-align: center;
 }
 
 #menuPage  > li{
@@ -447,30 +454,58 @@ list-style: none
 text-align: center;
 }
 
-#euros{
-float: left;
-position: relative;
-left: 75%;
-flex-direction: column;
-bottom: 200px;
+#menufood{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-#euros1{
-float: right;
-position: relative;
-right: 20%;
-flex-direction: column;
-bottom: 250px;
+.food{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    list-style: none
 }
 
+.euros{
+    display: flex;
+    position: absolute;
+    left: 60%;
+    flex-direction: column;
+    top: 442px;
+    list-style: none
+}
+
+#menudrinks{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.drinks{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    list-style: none
+}
+
+.euros1{
+    display: flex;
+    position: absolute;
+    left: 60%;
+    flex-direction: column;
+    top: 790px;
+    list-style: none
+}
 
 #menuPage button{
-background-color: #EDE5BB;
-position: relative;
-font-size: 20px;
-padding: 10px;
-left: 216px;
-width: 180px;
+    background-color: #EDE5BB;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    left: 126px;
+    width: 230px;
+    top: 90px;
 }
 
 #menuTitle {
@@ -483,5 +518,6 @@ width: 180px;
     position: absolute;
     text-align: center;
     font-size: 3rem;
-    margin-left: 41%;
+    margin-left: 35%;
+
 }
