@@ -1,13 +1,17 @@
+
 <section id="mainPicture">
 
 
-    <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIcon"></i>
+    <a href="#aboutUs"> <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIcon"></i></a>
 </section>
 
+<div id="specialTitle">
+<h2 class="h2Title">Our Specialties</h2>
+</div>
+    <section id="ourSpecialties">
 
-<section id="ourSpecialties">
 
-    <h2 class="h2Title">Our Specialties</h2>
+
 
     <div id="speacialtiesContent">
         <div class="croissant">
