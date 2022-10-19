@@ -68,3 +68,7 @@
     <img src="includes/pictures/workArea.jpg" alt="work Area Image" id="workAreaImg">
     </div>
 </section>
+
+<section id="phoneAboutUS">
+
+</section>
