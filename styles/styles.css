@@ -307,19 +307,9 @@ nav {
     margin-right: 50%;
 }
 
-
-
-/*
-12/10/2022
-Notes for Berne + other contributors:
-
-    Remove the unnecessary code
-    Figure out how to style the text inside the forms effectively
-
--Alex Schuepbach
-*/
-
-
+/*--------------*/
+/*- Newsletter -*/
+/*--------------*/
 
 #newsContainer{
 
@@ -338,8 +328,7 @@ Notes for Berne + other contributors:
 
 }
 
-
-#formContainer {
+#formContainer{
     display: flex;
     flex-direction: column;
     grid-column: 2/4;
@@ -369,8 +358,7 @@ Notes for Berne + other contributors:
     font-size: 1.5rem;
 }
 
-
-form {
+form{
     width: 75%;
     margin: 0;
 
@@ -395,7 +383,6 @@ input[type=text], input[type=email] {
 
     font-size: 1.5rem;
 }
-
 
 input[type=button], input[type=submit] {
     width: 100%;
@@ -595,9 +582,14 @@ input[type=button], input[type=submit] {
 /*--navBar--*/
 /*----------*/
 
+@media screen and (max-width: 576px) {
 
+	.navBar {
+		list-style: none;
+		font-size: 1.8rem;
+		color: white;
+	}
 
-@media screen and  (max-width: 756px){
 
 
 
@@ -608,10 +600,11 @@ input[type=button], input[type=submit] {
         display: block;
     }
 
-    .navBar > ul {
 
-        flex-direction: column;
-    }
+	.navBar >ul {
+		display: block;
+	}
+
 
     .wrapper{
         position: fixed;
@@ -624,6 +617,7 @@ input[type=button], input[type=submit] {
         z-index: 500;
     }
     #active:checked ~ .wrapper{
+
 
         right:0;
     }
@@ -643,6 +637,58 @@ input[type=button], input[type=submit] {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
+
+	nav {
+		display: block;
+	}
+
+	.link {
+		color: #EDE5BB;
+		text-decoration: none;
+	}
+
+	.pt-5  > li:hover {
+		background-color: #C96059;
+	}
+
+	.navBar li {
+		height: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.wrapper{
+		position: fixed;
+		top: 0;
+
+		right: -100%;
+		height: 100%;
+		width: 100%;
+		background: #95261F;
+		Z-INDEX: 100;
+		transition: all 0.6s ease-in-out;
+	}
+	#active:checked ~ .wrapper{
+
+		right:0;
+	}
+	.menu-btn{
+		position: absolute;
+		z-index: 200;
+		right: 20px;
+
+		top: 20px;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		line-height: 50px;
+		border-radius: 50%;
+		font-size: 20px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+	}
+
 
     .menu-btn span,
     .menu-btn:before {
@@ -711,13 +757,31 @@ input[type=button], input[type=submit] {
 
 
 
+	/*Swapping images*/
+	#mainPicture {
+		background-image: url("../includes/pictures/oui cafe mobile.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		z-index: 50;
+		grid-column: 1/7;
+		justify-content: center;
+		display: flex;
+	}
+	
+	#ouiCaffeImg {
+		display: none;
+	}
+	
+
+
+
 }
 
 
 /*-----------*/
 /*---index---*/
 /*-----------*/
-@media screen and  (max-width: 756px) {
+@media screen and  (max-width: 576px) {
     #ourSpecialties {
         height: 60rem;
         margin-bottom: 5rem;
