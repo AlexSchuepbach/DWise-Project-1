@@ -5,7 +5,7 @@
  }
 
 
- #content {
+#content {
     background-color: #EDE5BB;
      display: grid;
      grid-template-columns: repeat(6,1fr);
@@ -284,6 +284,10 @@ nav {
     margin-right: 50%;
 }
 
+/*--------------*/
+/*- Newsletter -*/
+/*--------------*/
+
 #newsContainer{
     height: 100vh;
     display: grid;
@@ -299,7 +303,6 @@ nav {
     grid-column: 1/7;
 
 }
-
 
 #formContainer{
     display: flex;
@@ -330,8 +333,6 @@ nav {
     font-size: 1.5rem;
 }
 
-
-
 form{
     width: 75%;
     margin: 0;
@@ -357,7 +358,6 @@ input[type=text], input[type=email]{
 
     font-size: 1.5rem;
 }
-
 
 input[type=button], input[type=submit] {
     width: 100%;
@@ -554,7 +554,7 @@ text-align: center;
 /*--navBar--*/
 /*----------*/
 
-@media screen and  (max-width: 576px){
+@media screen and (max-width: 576px) {
 
     header {
         display: block;
@@ -727,6 +727,23 @@ text-align: center;
         transition-delay: .6s;
         transform: translateX(-100px);
     }
+	
+	/*Swapping images*/
+	#mainPicture {
+		background-image: url("../includes/pictures/oui cafe mobile.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		z-index: 50;
+		grid-column: 1/7;
+		justify-content: center;
+		display: flex;
+	}
+	
+	#ouiCaffeImg {
+		display: none;
+	}
+	
+	
 
 }
 
