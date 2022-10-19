@@ -299,6 +299,7 @@ nav {
 }
 
 
+
 /*
 12/10/2022
 Notes for Berne + other contributors:
@@ -310,7 +311,9 @@ Notes for Berne + other contributors:
 */
 
 
-#newsContainer {
+
+#newsContainer{
+
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
@@ -583,14 +586,12 @@ input[type=button], input[type=submit] {
 /*--navBar--*/
 /*----------*/
 
-@media screen and  (max-width: 600px) {
-    /*
-        header {
-            display: block;
-            background: none;
-            grid-column: 1/7;
 
-        }
+
+@media screen and  (max-width: 756px){
+
+
+
 
         .navBar {
             list-style: none;
@@ -657,8 +658,6 @@ input[type=button], input[type=submit] {
             transition: all 0.3s ease-in-out;
         }
 
-     */
-    /*
     .menu-btn span,
     .menu-btn:before,
     .menu-btn:after{
@@ -728,7 +727,6 @@ input[type=button], input[type=submit] {
     .wrapper ul li a:after{
         position: absolute;
         content: "";
-/
         width: 100%;
         height: 100%;
         left: 0;
@@ -755,11 +753,12 @@ input[type=button], input[type=submit] {
     #active:checked ~ .wrapper ul li a{
         transform: none;
         transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
+        transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
+
         transition-delay: .6s;
         transform: translateX(-100px);
     }
 
-    */
 
 }
 
@@ -840,7 +839,7 @@ input[type=button], input[type=submit] {
 
         background-image: url("../includes/pictures/aboutUs.jpg");
         background-size: 100% 100%;
-        /* background-size: auto; */
+
         height: 110rem;
         z-index: 50;
         grid-column: 1/7;
@@ -853,7 +852,7 @@ input[type=button], input[type=submit] {
         display: none;
     }
 
-/*Swapping images*/
+    /*Swapping images*/
     #mainPicture {
         background-image: url("../includes/pictures/ouiCaffePhone.png");
         background-size: 100%;
@@ -873,7 +872,6 @@ input[type=button], input[type=submit] {
         margin-top: 39rem;
         /* align-self: flex-end; */
     }
-
 }
 
 
@@ -882,9 +880,110 @@ input[type=button], input[type=submit] {
 /*-----------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------*/
 /*---Newsletter And Video---*/
 /*-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-----------*/
