@@ -459,6 +459,7 @@ input[type=button], input[type=submit] {
 
 #menuPage h2 {
     text-align: center;
+    font-size: 35px;
 }
 
 #menuList {
@@ -480,17 +481,19 @@ input[type=button], input[type=submit] {
     display: flex;
     position: relative;
     flex-direction: column;
-    list-style: none
+    list-style: none;
+    font-size: 17px;
 }
 
 .euros {
     display: flex;
     position: relative;
-    bottom: 240px;
+    bottom: 242px;
     flex-direction: column;
     /* top: 442px; */
     list-style: none;
     left: 351px;
+    font-size: 16px;
 }
 
 .euros > li {
@@ -507,17 +510,19 @@ input[type=button], input[type=submit] {
     display: flex;
     position: relative;
     flex-direction: column;
-    list-style: none
+    list-style: none;
+    font-size: 17px;
 }
 
 .euros1 {
 
     display: flex;
     position: relative;
-    left: 351px;
+    left: 352px;
     flex-direction: column;
-    bottom: 300px;
+    bottom: 303px;
     list-style: none;
+    font-size: 15px;
 }
 
 .euros1 > li {
@@ -527,11 +532,13 @@ input[type=button], input[type=submit] {
 #menuPage button {
     background-color: #EDE5BB;
     position: relative;
-    font-size: 20px;
-    padding: 10px;
-    left: 126px;
-    width: 230px;
-    top: -90px;
+    font-size: 25px;
+    left: 115px;
+    width: 280px;
+    bottom: 230px;
+    color: #95261F;
+    font-family: Caveat;
+
 }
 
 #menuTitle {
@@ -1016,3 +1023,61 @@ input[type=button], input[type=submit] {
 /*---menu---*/
 /*-----------*/
 
+@media screen and  (max-width: 576px) {
+    #menuContainer {
+        height: 60rem;
+        margin-bottom: 5rem;
+    }
+
+#menuContainer{
+    background-color: #EDE5BB;
+    background-image: none;
+    height: 1400px;
+    background-repeat: no-repeat;
+    grid-column: 1/7;
+    display: flex;
+}
+
+#menuPage >h1{
+    display: none;
+}
+
+#menuPage .box {
+        background-image: url("../OUI pictures/eiffel tower.png");
+        background-size: cover;
+        height: 800px;
+        grid-column: 2/6;
+        margin-top: 6rem;
+        width: 300px;
+        margin-left: 0%;
+}
+
+#menuPage >h2{
+    font-size: 30px;
+}
+
+.euros{
+        display: flex;
+        position: relative;
+        bottom: 229px;
+        flex-direction: column;
+        /* top: 442px; */
+        list-style: none;
+        left: 200px;
+        font-size: 15px;
+}
+
+.euros1{
+        display: flex;
+        position: relative;
+        left: 201px;
+        flex-direction: column;
+        bottom: 290px;
+        list-style: none;
+        font-size: 14px;
+}
+#menuPage button {
+    display: none;
+}
+
+}
