@@ -3,6 +3,8 @@
 
 
     <a href="#aboutUs"> <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIcon"></i></a>
+    <a href="#phoneAboutUS"> <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIconPhone"></i></a>
+
 </section>
 
 <div id="specialTitle">

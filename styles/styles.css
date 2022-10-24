@@ -16,6 +16,11 @@ body {
 #phoneAboutUS {
     display: none;
 }
+#navScreenPhone {
+    display: none;
+}
+
+
 
 /*-----------*/
 /*-main pic-*/
@@ -33,6 +38,8 @@ body {
     /* margin-bottom: auto;*/
 
 }
+
+#dropDownIconPhone{ display: none}
 
 #dropDownIcon {
 
@@ -56,6 +63,8 @@ header {
 	justify-content: center;
     background-color: #681A15;
     grid-column: 1/7;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -452,6 +461,7 @@ input[type=button], input[type=submit] {
 
 #menuPage h2 {
     text-align: center;
+    font-size: 35px;
 }
 
 #menuList {
@@ -473,17 +483,19 @@ input[type=button], input[type=submit] {
     display: flex;
     position: relative;
     flex-direction: column;
-    list-style: none
+    list-style: none;
+    font-size: 17px;
 }
 
 .euros {
     display: flex;
     position: relative;
-    bottom: 240px;
+    bottom: 234px;
     flex-direction: column;
     /* top: 442px; */
     list-style: none;
     left: 351px;
+    font-size: 16px;
 }
 
 .euros > li {
@@ -500,17 +512,19 @@ input[type=button], input[type=submit] {
     display: flex;
     position: relative;
     flex-direction: column;
-    list-style: none
+    list-style: none;
+    font-size: 17px;
 }
 
 .euros1 {
 
     display: flex;
     position: relative;
-    left: 351px;
+    left: 352px;
     flex-direction: column;
-    bottom: 300px;
+    bottom: 298px;
     list-style: none;
+    font-size: 15px;
 }
 
 .euros1 > li {
@@ -520,11 +534,13 @@ input[type=button], input[type=submit] {
 #menuPage button {
     background-color: #EDE5BB;
     position: relative;
-    font-size: 20px;
-    padding: 10px;
-    left: 126px;
-    width: 230px;
-    top: -90px;
+    font-size: 25px;
+    left: 115px;
+    width: 280px;
+    bottom: 230px;
+    color: #95261F;
+    font-family: Caveat;
+
 }
 
 #menuTitle {
@@ -578,11 +594,22 @@ input[type=button], input[type=submit] {
 @media screen and (max-width: 576px) {
 
 	.navBar {
-		list-style: none;
-		font-size: 1.8rem;
-		color: white;
+        list-style: none;
+        font-size: 2.2rem;
+        color: white;
+        text-align: center;
+        margin-top: 14rem;
 	}
 
+
+
+
+    #navScreen {
+        display: none;
+    }
+    #navScreenPhone {
+        display: block;
+    }
 
 
 	.navBar >ul {
@@ -590,6 +617,37 @@ input[type=button], input[type=submit] {
 	}
 
 
+    .wrapper{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: #95261F;
+        transition: all 0.6s ease-in-out;
+        z-index: 500;
+    }
+    #active:checked ~ .wrapper{
+
+
+        right:0;
+    }
+    .menu-btn{
+        position: absolute;
+
+        z-index: 522;
+        right: 20px;
+
+        top: 20px;
+        height: 50px;
+        width: 75px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
 	nav {
 		display: block;
@@ -601,15 +659,15 @@ input[type=button], input[type=submit] {
 	}
 
 	.pt-5  > li:hover {
-		background-color: #C96059;
+        background: none;
 	}
 
 	.navBar li {
 		height: 100%;
 		padding-left: 0;
 		padding-right: 0;
-		padding-top: 0;
-		padding-bottom: 0;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 	.wrapper{
 		position: fixed;
@@ -642,8 +700,20 @@ input[type=button], input[type=submit] {
 		transition: all 0.3s ease-in-out;
 	}
 
+
     .menu-btn span,
-    .menu-btn:before,
+    .menu-btn:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 30%;
+        width: 40%;
+        border-bottom: 2px solid #95261F;
+        z-index: 500;
+        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+
     .menu-btn:after{
         content: "";
         position: absolute;
@@ -651,8 +721,8 @@ input[type=button], input[type=submit] {
         left: 30%;
         width: 40%;
         border-bottom: 2px solid #95261F;
+        z-index: 500;
         transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-        z-index: 150;
     }
     .menu-btn:before{
         transform: translateY(-8px);
@@ -663,7 +733,7 @@ input[type=button], input[type=submit] {
 
 
     .close {
-        z-index: 250;
+        z-index: 1150;
         width: 100%;
         height: 100%;
         pointer-events: none;
@@ -671,57 +741,15 @@ input[type=button], input[type=submit] {
     }
 
 
-    #active:checked + .menu-btn span {
-        transform: scaleX(0);
-    }
     #active:checked + .menu-btn:before {
         transform: rotate(45deg);
+        border-color: #EDE5BB;
+        z-index: 500;
     }
     #active:checked + .menu-btn:after {
         transform: rotate(-45deg);
-
-    }
-    .wrapper ul{
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        height: 90%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        text-align: center;
-    }
-    .wrapper ul li{
-        height: 10%;
-        margin: 15px 0;
-    }
-    .wrapper ul li a{
-        text-decoration: none;
-        font-size: 30px;
-        font-weight: 500;
-        padding: 5px 30px;
-
-        border-radius: 50px;
-        position: absolute;
-        line-height: 50px;
-        margin: 5px 30px;
-        opacity: 0;
-        transition: all 0.3s ease;
-        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    .wrapper ul li a:after{
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 50px;
-        transform: scaleY(0);
-        z-index: -1;
-        transition: transform 0.3s ease;
-    }
-    .wrapper ul li a:hover:after{
-        transform: scaleY(1);
+        border-color: #EDE5BB;
+        z-index: 500;
     }
 
     input[type="checkbox"]{
@@ -730,19 +758,8 @@ input[type=button], input[type=submit] {
     #active:checked ~ .wrapper ul li a{
         opacity: 1;
     }
-    .wrapper ul li a{
-        transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transform: translateX(100px);
-    }
-    #active:checked ~ .wrapper ul li a{
-        transform: none;
-        transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
-        transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
 
-        transition-delay: .6s;
-        transform: translateX(-100px);
-    }
-	
+
 	/*Swapping images*/
 	#mainPicture {
 		background-image: url("../includes/pictures/oui cafe mobile.jpg");
@@ -758,7 +775,7 @@ input[type=button], input[type=submit] {
 		display: none;
 	}
 	
-	
+
 
 
 }
@@ -869,9 +886,20 @@ input[type=button], input[type=submit] {
     }
 
     #dropDownIcon {
-
+        display: none;
         margin-top: 39rem;
         /* align-self: flex-end; */
+    }
+    #dropDownIconPhone {
+        z-index: 100;
+        font-size: 5rem;
+        color: #EDE5BB;
+        /* justify-content: center; */
+        margin-bottom: auto;
+        margin-top: 39rem;
+        /* align-self: flex-end; */
+        display: inline-block;
+
     }
 }
 
@@ -991,3 +1019,61 @@ input[type=button], input[type=submit] {
 /*---menu---*/
 /*-----------*/
 
+@media screen and  (max-width: 576px) {
+    #menuContainer {
+        height: 60rem;
+        margin-bottom: 5rem;
+    }
+
+#menuContainer{
+    background-color: #EDE5BB;
+    background-image: none;
+    height: 1400px;
+    background-repeat: no-repeat;
+    grid-column: 1/7;
+    display: flex;
+}
+
+#menuPage >h1{
+    display: none;
+}
+
+#menuPage .box {
+        background-image: url("../OUI pictures/eiffel tower.png");
+        background-size: cover;
+        height: 800px;
+
+        margin-top: 6rem;
+        width: 300px;
+        margin-left: 0%;
+}
+
+#menuPage >h2{
+    font-size: 30px;
+}
+
+.euros{
+        display: flex;
+        position: relative;
+        bottom: 229px;
+        flex-direction: column;
+        /* top: 442px; */
+        list-style: none;
+        left: 200px;
+        font-size: 15px;
+}
+
+.euros1{
+        display: flex;
+        position: relative;
+        left: 201px;
+        flex-direction: column;
+        bottom: 290px;
+        list-style: none;
+        font-size: 14px;
+}
+#menuPage button {
+    display: none;
+}
+
+}
