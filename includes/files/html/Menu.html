@@ -1,3 +1,10 @@
+<script>
+	$('#Button').click(function(e) {
+	e.preventDefault();  //stop the browser from following
+	window.location.href = '../../menuPdf.pdf';
+	});
+
+</script>
 
 
 <body>
@@ -72,8 +79,9 @@
 						<li>2,30</li>
 					</div>
 					</ul>
-					<button id="Button"><p>Download PDF</p>
+						<button id="Button"><a id="download" href="../../menuPdf.pdf"  download>Download PDF</a></button>
 				</ul>
 				</div>
 			</section>
+		</div>
 	</body>

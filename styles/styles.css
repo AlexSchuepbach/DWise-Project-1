@@ -282,23 +282,31 @@ nav {
 
 #footerFlex {
     display: flex;
-    grid-column: 1/7;
+    grid-column: 1/3;
 }
 
-#footerFlex > img {
-    width: 2%;
-    margin-right: 20%;
+#footerCoffe {
+    width: 12%;
+    margin-left: 16%;
+}
+
+#footerCroiss {
+    width: 20%;
+    margin-left: 25%;
 }
 
 #footerFlex > p {
 
-    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 1.2rem;
 }
 
 #followUs {
     margin-right: 20%;
     margin-top: 0.7%;
     display: flex;
+    grid-column: 3/5;
 
 }
 
@@ -306,6 +314,27 @@ nav {
     font-size: 1.2rem;
     margin-right: 50%;
 }
+.footerFlex2 {
+    display: flex;
+    grid-column: 5/7;
+
+}
+.footerFlex2 > p {
+    margin-top: 5%;
+    margin-left: 22%;
+    font-size: 1.2rem;
+}
+#followUs > h4 {
+    position: absolute;
+    margin-left: 15%;
+    font-size: 1.2rem;
+    margin-top: 1%;
+}
+#icons {
+    margin-left: 56.5%;
+    margin-top: 8%;
+}
+
 
 /*--------------*/
 /*- Newsletter -*/
@@ -405,6 +434,9 @@ input[type=button], input[type=submit] {
 
 /*******/
 
+#Button:hover {
+    cursor: pointer;
+}
 #menuContainer {
 
     background-image: url("../includes/pictures/rsz_1menu_bg_1 (1).png");

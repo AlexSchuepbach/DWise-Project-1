@@ -1,3 +1,19 @@
+<script type="text/javascript" src="includes/jquery/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- top 2 lines including jquery -->
+
+<script>
+    //preparing the jquerz
+    $(document).ready(function () {
+        $('#Button').click(function (e) {
+            e.preventDefault();  //stop the browser from following
+            window.location.href = 'includes/menuPdf.pdf'; //download the file
+        });
+    });
+</script>
+
+
 <div id="menuContainer">
 
 
@@ -77,7 +93,7 @@
                 </div>
             </ul>
             </div>
-            <button id="Button"><p>Download PDF</p></button>
+            <button id="Button">Download PDF</a></button>
         </div>
     </section>
 </div>
