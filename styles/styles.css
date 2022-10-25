@@ -134,6 +134,9 @@ nav {
     font-size: 4rem;
 
 }
+#icons > a {
+    color: #CBC7B6;
+}
 
 #speacialtiesContent {
     display: grid;
