@@ -1071,8 +1071,7 @@ input[type=button], input[type=submit] {
 #menuPage .box {
         background-image: url("../OUI pictures/eiffel tower.png");
         background-size: cover;
-        height: 800px;
-
+        height: 865px;
         margin-top: 6rem;
         width: 300px;
         margin-left: 0%;
@@ -1103,7 +1102,14 @@ input[type=button], input[type=submit] {
         font-size: 14px;
 }
 #menuPage button {
-    display: none;
+        background-color: #EDE5BB;
+        position: relative;
+        font-size: 25px;
+        left: 61px;
+        width: 180px;
+        bottom: 298px;
+        color: #95261F;
+        font-family: Caveat;
 }
 
 }
