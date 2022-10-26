@@ -429,7 +429,9 @@ input[type=button], input[type=submit] {
 
     font-size: 1.5rem;
 }
-
+::placeholder {
+    color: #95261F;
+}
 
 /**************/
 /*- Menu Page
@@ -613,6 +615,10 @@ input[type=button], input[type=submit] {
 
 #flexVid {
     margin-left: 11%;
+}
+
+#videoPhone {
+    display: none;
 }
 
 /*--------------*/
@@ -988,16 +994,108 @@ input[type=button], input[type=submit] {
 /*-----------*/
 /*---Newsletter And Video---*/
 /*-----------*/
+@media screen and  (max-width: 576px) {
+    #videoPhone {
+        background-size: 100% 100%;
+
+        height: 50rem;
+        z-index: 50;
+        grid-column: 1/7;
+        justify-content: center;
+        display: flex;
+
+        background-image: url("../includes/pictures/arcDeTri.jpg");
+    }
+
+    .coffeevideo {
+
+        background-color: rgba(237, 229, 187, .7);
+        max-height: 30rem;
+        width: 65%;
+        margin-top: 7rem;
+
+    }
+
+    .coffeevideo > h1 {
+
+        font-size: 1.5rem;
+    }
 
 
+    #vide {
+        display: none;
+    }
+
+    #phoneVideo {
+        margin-left: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
 
 
+    #newsContainer {
 
 
+        background-image: url("../includes/pictures/arcDeTri.jpg ");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        z-index: 50;
+        grid-column: 1/7;
+
+    }
 
 
+    #formContainer {
 
+        background-color: rgba(237, 229, 187, .7);
+        max-height: 40rem;
+        width: 100%;
+        margin-top: 7rem;
 
+        align-items: center;
+        justify-content: space-evenly;
+        justify-self: center;
+
+    }
+    #newsText > h1 {
+
+        color: #95261F;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #newsText > p {
+
+        color: #95261F;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    input[type=text], input[type=email] {
+        width: 75%;
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+        background-color: #95261F;
+        color: #EDE5BB;
+
+    }
+
+    input[type=button], input[type=submit] {
+        width: 100%;
+        background-color: #95261F;
+        color: #EDE5BB;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        cursor: pointer;
+
+    }
+
+    ::placeholder {
+        color: #EDE5BB;
+        font-size: 0.8rem;
+    }
+}
 
 
 
