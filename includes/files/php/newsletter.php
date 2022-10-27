@@ -20,8 +20,15 @@
 
                 if (empty($fname) || empty($lname)){
                     echo "Please enter your name";
+					//remove inputs from variables
+					$fname = null;
+					$lname = null;
+					$email = null;
                 } else if ($email == FALSE) {
                     echo "Please enter a valid email address.";
+					$fname = null;
+					$lname = null;
+					$email = null;
                 } else {
                     echo "Thank you for signing up " . $fname . "!";
                 }
