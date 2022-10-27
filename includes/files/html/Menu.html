@@ -1,6 +1,17 @@
+<script>
+
+	//with this script you can donwload the menu version of the pdf. If this would be html you could change the file you are downloading.
+	$('#Button').click(function(e) {
+	e.preventDefault();  //stop the browser from following
+
+		//defining the file
+	window.location.href = '../../menuPdf.pdf';
+	});
+
+</script>
 
 
-<body>
+
 		<div id="container">
 			<header>
 				<h1>Our Kitchen and Bar</h1>
@@ -72,8 +83,8 @@
 						<li>2,30</li>
 					</div>
 					</ul>
-					<button id="Button"><p>Download PDF</p>
+						<button id="Button"><a id="download" href="../../menuPdf.pdf"  download>Download PDF</a></button>
 				</ul>
 				</div>
 			</section>
-	</body>
+		</div>

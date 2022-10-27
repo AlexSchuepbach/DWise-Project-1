@@ -8,47 +8,16 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="icon" href="includes/pictures/logos/Logo-02.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/0b4a9ad2b3.js" crossorigin="anonymous"></script>
-    <script type="javascript" src="includes/jquery/jquery.js"
+    <script type="javascript" src="includes/jquery/jquery.js"></script>
     <title>OUI</title>
 
-
-    <script>
-
-
-
-            $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("#dropDownIcon").on('click', function(event) {
-
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function(){
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-
-                        });
-                    }
-                });
-            });
-
-    </script>
 </head>
 <body>
 <div id='content'>
     <header>
 
         <?php
-
+        //including tha nav bar once in the index page so it stays here for the rest of the pages
         include_once "includes/files/html/navbar.html";
 
         ?>
@@ -58,15 +27,17 @@
 <?php
 
 
+
+        // defining an empty var for including pages into index page
         $page = "";
 
-
+        // getting the get parameter from url
         if (isset($_GET['page'])) {
             $page = $_GET['page'];
 
         }
 
-
+        //depending on the certain par we include a certain page
 		if ($page == "Home") {
             include_once "includes/files/php/startingPage.php";
         } else if ($page ==="Menu"){
@@ -91,7 +62,7 @@
 </body>
 <footer>
     <?php
-
+        //including the footer
     include_once "includes/files/html/footer.html";
 
     ?>
