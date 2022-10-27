@@ -1,4 +1,4 @@
-
+<!---Starting Page html --->
 <section id="mainPicture">
 
 
