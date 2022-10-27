@@ -1,4 +1,4 @@
-
+<!--iframs directly from yt to for the video page. Mind that we have one version for the phone and one for the big screens -->
 <section id="vide">
     <div class="coffeevideo">
 

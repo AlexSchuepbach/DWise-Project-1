@@ -1,3 +1,5 @@
+/*importing the font */
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
 
 body {
@@ -12,7 +14,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
 
 }
-
+/* not displaying certain phone parts*/
 #phoneAboutUS {
     display: none;
 }
@@ -29,13 +31,12 @@ body {
 #mainPicture {
     background-image: url("../OUI pictures/t2.jpg");
     background-size: 100% 100%;
-    /* background-size: auto; */
     height: 1200px;
     z-index: 50;
     grid-column: 1/7;
     justify-content: center;
     display: flex;
-    /* margin-bottom: auto;*/
+
 
 }
 
@@ -46,10 +47,8 @@ body {
     z-index: 100;
     font-size: 5rem;
     color: #EDE5BB;
-    /* justify-content: center; */
     margin-bottom: auto;
     margin-top: 70rem;
-    /* align-self: flex-end; */
 }
 
 
@@ -527,7 +526,6 @@ input[type=button], input[type=submit] {
     position: relative;
     bottom: 234px;
     flex-direction: column;
-    /* top: 442px; */
     list-style: none;
     left: 351px;
     font-size: 16px;
@@ -583,8 +581,6 @@ input[type=button], input[type=submit] {
     color: #EDE5BB;
     z-index: 100;
     color: #EDE5BB;
-    text-align: center;
-    /* grid-column: 4/7; */
     position: absolute;
     text-align: center;
 
@@ -1072,7 +1068,7 @@ input[type=button], input[type=submit] {
     }
     input[type=text], input[type=email] {
         width: 75%;
-        padding: 1rem 1rem;
+        padding: 0.6rem 0.6rem;
         margin: 1rem 1rem;
         background-color: #95261F;
         color: #EDE5BB;
@@ -1093,7 +1089,7 @@ input[type=button], input[type=submit] {
 
     ::placeholder {
         color: #EDE5BB;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 }
 

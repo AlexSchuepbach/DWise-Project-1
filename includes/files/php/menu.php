@@ -4,7 +4,8 @@
 <!-- top 2 lines including jquery -->
 
 <script>
-    //preparing the jquerz
+    //preparing the jquery
+    //with this script you can donwload the menu version of the pdf. If this would be html you could change the file you are downloading.
     $(document).ready(function () {
         $('#Button').click(function (e) {
             e.preventDefault();  //stop the browser from following

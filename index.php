@@ -17,7 +17,7 @@
     <header>
 
         <?php
-
+        //including tha nav bar once in the index page so it stays here for the rest of the pages
         include_once "includes/files/html/navbar.html";
 
         ?>
@@ -27,15 +27,17 @@
 <?php
 
 
+
+        // defining an empty var for including pages into index page
         $page = "";
 
-
+        // getting the get parameter from url
         if (isset($_GET['page'])) {
             $page = $_GET['page'];
 
         }
 
-
+        //depending on the certain par we include a certain page
 		if ($page == "Home") {
             include_once "includes/files/php/startingPage.php";
         } else if ($page ==="Menu"){
@@ -60,7 +62,7 @@
 </body>
 <footer>
     <?php
-
+        //including the footer
     include_once "includes/files/html/footer.html";
 
     ?>
