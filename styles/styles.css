@@ -58,6 +58,8 @@ body {
 
 header {
     display: flex;
+	align-items: center;
+	justify-content: center;
     background-color: #681A15;
     grid-column: 1/7;
     justify-content: center;
