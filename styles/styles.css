@@ -442,7 +442,7 @@ input[type=button], input[type=submit] {
     cursor: pointer;
 }
 #menuContainer {
-
+    height: 100vh;
     background-image: url("../includes/pictures/Screenshot 2022-10-25 112451.png");
     height: 1400px;
     background-size: 100vw;
@@ -450,6 +450,7 @@ input[type=button], input[type=submit] {
     grid-column: 1/7;
     display: flex;
     background-size: 100% 100%;
+    justify-content: center;
 }
 
 #menuContainer > h1 {
@@ -479,10 +480,10 @@ input[type=button], input[type=submit] {
     background-image: url("../OUI pictures/eiffel tower.png");
     background-size: cover;
     height: 1050px;
-    grid-column: 4/7;
-    margin-top: 11rem;
+    grid-column: 5/6;
+    margin-bottom: 6rem;
     width: 500px;
-    margin-left: 12%;
+    /*margin-left: 12%;*/
 }
 
 #menuPage {
@@ -581,11 +582,11 @@ input[type=button], input[type=submit] {
     color: #EDE5BB;
     z-index: 100;
     color: #EDE5BB;
-    position: absolute;
+    position: relative;
     text-align: center;
-
-    font-size: 4.5rem;
-    margin-left: 37%;
+    font-size: 4rem;
+    /*margin-left: 37%;*/
+    grid-column: 5/6;
 
 
 }
