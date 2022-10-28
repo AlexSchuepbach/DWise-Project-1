@@ -1,13 +1,19 @@
+<!---Starting Page html --->
 <section id="mainPicture">
 
 
-    <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIcon"></i>
+    <a href="#aboutUs"> <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIcon"></i></a>
+    <a href="#phoneAboutUS"> <i class="fa-sharp fa-solid fa-arrow-down" id="dropDownIconPhone"></i></a>
+
 </section>
 
+<div id="specialTitle">
+<h2 class="h2Title">Our Specialties</h2>
+</div>
+    <section id="ourSpecialties">
 
-<section id="ourSpecialties">
 
-    <h2 class="h2Title">Our Specialties</h2>
+
 
     <div id="speacialtiesContent">
         <div class="croissant">
@@ -63,4 +69,8 @@
 
     <img src="includes/pictures/workArea.jpg" alt="work Area Image" id="workAreaImg">
     </div>
+</section>
+
+<section id="phoneAboutUS">
+
 </section>
