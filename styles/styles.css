@@ -604,22 +604,28 @@ input[type=button], input[type=submit] {
 /*------*/
 #vide {
     display: flex;
-    grid-column: 2/6;
+    grid-column: 3/6;
     width: 100%;
+    height: 110rem;
 }
 
 .coffeevideo {
     width: 100%;
+
+
+    
+}
+
+#vide {
+    display: flex;
+    grid-column: 3/5;
+    height: 109rem;
 }
 
 .coffeevideo > h1 {
     text-align: center;
     color: #95261F;
-    font-size: 4rem;
-}
-
-#flexVid {
-    margin-left: 11%;
+    font-size: 4vw;
 }
 
 #videoPhone {
