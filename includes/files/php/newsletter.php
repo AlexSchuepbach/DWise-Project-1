@@ -1,13 +1,6 @@
 <div id="newsContainer">
 
-    <nav>
-        <ul class="navBar">
-            <li class="navItem"><a href="index.php?page=Home">Starting Page</a></li>
-            <li class="navItem"><a href="index.php?page=Menu">Menu</a></li>
-            <li class="navItem"><a href="index.php?page=Newsletter">Newsletter</a></li>
-            <li class="navItem"><a href="index.php?page=Video">Video</a></a></li>
-        </ul>
-    </nav>
+
 
     <!-- Main content -->
     <div id="formContainer">
