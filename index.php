@@ -11,7 +11,24 @@
     <script type="javascript" src="includes/jquery/jquery.js"></script>
     <title>OUI</title>
 
+
+    <script>
+        $(document).ready(function(){
+
+
+            $("#dropDownIcon").on("click" ,function(){
+                scrolled=scrolled+300;
+
+                $(".cover").animate({
+                    scrollTop:  scrolled;
+                });
+
+            });
+
+    </script>
+
 </head>
+
 <body>
 <div id='content'>
     <header>
