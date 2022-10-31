@@ -448,12 +448,12 @@ input[type=button], input[type=submit] {
     cursor: pointer;
 }
 #menuContainer {
-    height: 100vh;
+    height: 100vw;
     background-image: url("../includes/pictures/Screenshot 2022-10-25 112451.png");
-    height: 1400px;
-    background-size: 100vw;
     background-repeat: no-repeat;
     grid-column: 1/7;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
     display: flex;
     background-size: 100% 100%;
     justify-content: center;
@@ -482,15 +482,17 @@ input[type=button], input[type=submit] {
     text-align: center;
 }
 
+
 #menuPage .box {
     background-image: url("../OUI pictures/eiffel tower.png");
     background-size: cover;
-    height: 1050px;
+    height: 80vw;
     grid-column: 5/6;
+    grid-row: 2/8;
     margin-bottom: 6rem;
-    width: 500px;
-    /*margin-left: 12%;*/
+    width: 30vw;
 }
+
 
 #menuPage {
     /* grid-column: 3/6; */
@@ -502,7 +504,7 @@ input[type=button], input[type=submit] {
 
 #menuPage h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.5vw;
 }
 
 #menuList {
@@ -511,6 +513,10 @@ input[type=button], input[type=submit] {
 
 #menuContainer > h2 {
     text-align: center;
+}
+
+#menufoodtext{
+    margin-top: 1rem;
 }
 
 #menufood {
@@ -523,19 +529,22 @@ input[type=button], input[type=submit] {
 .food {
     display: flex;
     position: relative;
+    bottom: 3vw;
     flex-direction: column;
     list-style: none;
-    font-size: 17px;
+    left: 0vw;
+    font-size: 1.5vw;
 }
 
 .euros {
     display: flex;
     position: relative;
-    bottom: 234px;
+    bottom: 24vw;
     flex-direction: column;
     list-style: none;
-    left: 351px;
-    font-size: 16px;
+    left: 21vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
 }
 
 .euros > li {
@@ -548,23 +557,29 @@ input[type=button], input[type=submit] {
     flex-direction: row;
 }
 
+#menudrinkstext{
+    margin-top: 3rem;
+}
+
 .drinks {
     display: flex;
     position: relative;
+    top: 0vw;
     flex-direction: column;
     list-style: none;
-    font-size: 17px;
+    left: 0vw;
+    font-size: 1.4vw;
 }
 
 .euros1 {
-
     display: flex;
     position: relative;
-    left: 352px;
+    bottom: 25vw;
     flex-direction: column;
-    bottom: 298px;
     list-style: none;
-    font-size: 15px;
+    left: 21vw;
+    font-size: 1.1vw;
+    line-height: 1.58vw;
 }
 
 .euros1 > li {
@@ -574,10 +589,10 @@ input[type=button], input[type=submit] {
 #menuPage button {
     background-color: #EDE5BB;
     position: relative;
-    font-size: 25px;
-    left: 115px;
-    width: 280px;
-    bottom: 230px;
+    font-size: 1.5vw;
+    left: 10px;
+    width: 95%;
+    bottom: 150px;
     color: #95261F;
     font-family: Caveat;
 
@@ -590,9 +605,9 @@ input[type=button], input[type=submit] {
     color: #EDE5BB;
     position: relative;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3vw;
     /*margin-left: 37%;*/
-    grid-column: 5/6;
+    grid-column: 4/7;
 
 
 }

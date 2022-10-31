@@ -22,7 +22,9 @@
         <h1 id="menuTitle">Our Kitchen and Bar</h1>
         <div class="box">
 
+        <div id="menufoodtext">
             <h2>Food</h2>
+        </div>
             <div id="menufood">
             <ul id="menuList">
                 <div class="food">
@@ -55,7 +57,10 @@
                 </div>
             </ul>
             </div>
+
+        <div id="menudrinkstext">
             <h2>Drinks</h2>
+        </div>
             <div id="menudrinks">
             <ul>
                 <div class="drinks">
