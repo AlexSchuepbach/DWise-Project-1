@@ -59,8 +59,8 @@ body {
 
 header {
     display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
     background-color: #681A15;
     grid-column: 1/7;
     justify-content: center;
@@ -450,12 +450,12 @@ input[type=button], input[type=submit] {
     cursor: pointer;
 }
 #menuContainer {
-    height: 100vw;
+
     background-image: url("../includes/pictures/Screenshot 2022-10-25 112451.png");
+    height: 110rem;
+    background-size: 100vw;
     background-repeat: no-repeat;
     grid-column: 1/7;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
     display: flex;
     background-size: 100% 100%;
     justify-content: center;
@@ -484,17 +484,15 @@ input[type=button], input[type=submit] {
     text-align: center;
 }
 
-
 #menuPage .box {
     background-image: url("../OUI pictures/eiffel tower.png");
     background-size: cover;
-    height: 80vw;
+    height: 1050px;
     grid-column: 5/6;
-    grid-row: 2/8;
     margin-bottom: 6rem;
-    width: 30vw;
+    width: 500px;
+    /*margin-left: 12%;*/
 }
-
 
 #menuPage {
     /* grid-column: 3/6; */
@@ -506,7 +504,7 @@ input[type=button], input[type=submit] {
 
 #menuPage h2 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 35px;
 }
 
 #menuList {
@@ -515,10 +513,6 @@ input[type=button], input[type=submit] {
 
 #menuContainer > h2 {
     text-align: center;
-}
-
-#menufoodtext{
-    margin-top: 1rem;
 }
 
 #menufood {
@@ -531,22 +525,19 @@ input[type=button], input[type=submit] {
 .food {
     display: flex;
     position: relative;
-    bottom: 3vw;
     flex-direction: column;
     list-style: none;
-    left: 0vw;
-    font-size: 1.5vw;
+    font-size: 17px;
 }
 
 .euros {
     display: flex;
     position: relative;
-    bottom: 24vw;
+    bottom: 234px;
     flex-direction: column;
     list-style: none;
-    left: 21vw;
-    font-size: 1vw;
-    line-height: 1.8vw;
+    left: 351px;
+    font-size: 16px;
 }
 
 .euros > li {
@@ -559,29 +550,23 @@ input[type=button], input[type=submit] {
     flex-direction: row;
 }
 
-#menudrinkstext{
-    margin-top: 3rem;
-}
-
 .drinks {
     display: flex;
     position: relative;
-    top: 0vw;
     flex-direction: column;
     list-style: none;
-    left: 0vw;
-    font-size: 1.4vw;
+    font-size: 17px;
 }
 
 .euros1 {
+
     display: flex;
     position: relative;
-    bottom: 25vw;
+    left: 352px;
     flex-direction: column;
+    bottom: 298px;
     list-style: none;
-    left: 21vw;
-    font-size: 1.1vw;
-    line-height: 1.58vw;
+    font-size: 15px;
 }
 
 .euros1 > li {
@@ -591,10 +576,10 @@ input[type=button], input[type=submit] {
 #menuPage button {
     background-color: #EDE5BB;
     position: relative;
-    font-size: 1.5vw;
-    left: 10px;
-    width: 95%;
-    bottom: 150px;
+    font-size: 25px;
+    left: 115px;
+    width: 280px;
+    bottom: 230px;
     color: #95261F;
     font-family: Caveat;
 
@@ -607,9 +592,9 @@ input[type=button], input[type=submit] {
     color: #EDE5BB;
     position: relative;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4rem;
     /*margin-left: 37%;*/
-    grid-column: 4/7;
+    grid-column: 5/6;
 
 
 }
@@ -617,30 +602,27 @@ input[type=button], input[type=submit] {
 /*-------*/
 /*-video-*/
 /*------*/
+
 #vide {
     display: flex;
-    grid-column: 3/6;
+    grid-column: 2/6;
     width: 100%;
-    height: 110rem;
+
 }
+
 
 .coffeevideo {
     width: 100%;
-
-
-    
-}
-
-#vide {
-    display: flex;
-    grid-column: 3/5;
-    height: 109rem;
 }
 
 .coffeevideo > h1 {
     text-align: center;
     color: #95261F;
-    font-size: 4vw;
+    font-size: 4rem;
+}
+
+#flexVid {
+    margin-left: 11%;
 }
 
 #videoPhone {
@@ -658,13 +640,13 @@ input[type=button], input[type=submit] {
 
 @media screen and (max-width: 576px) {
 
-	.navBar {
+    .navBar {
         list-style: none;
         font-size: 2.2rem;
         color: white;
         text-align: center;
         margin-top: 14rem;
-	}
+    }
 
 
 
@@ -677,9 +659,9 @@ input[type=button], input[type=submit] {
     }
 
 
-	.navBar >ul {
-		display: block;
-	}
+    .navBar >ul {
+        display: block;
+    }
 
 
     .wrapper{
@@ -714,56 +696,56 @@ input[type=button], input[type=submit] {
         transition: all 0.3s ease-in-out;
     }
 
-	nav {
-		display: block;
-	}
+    nav {
+        display: block;
+    }
 
-	.link {
-		color: #EDE5BB;
-		text-decoration: none;
-	}
+    .link {
+        color: #EDE5BB;
+        text-decoration: none;
+    }
 
-	.pt-5  > li:hover {
+    .pt-5  > li:hover {
         background: none;
-	}
+    }
 
-	.navBar li {
-		height: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
-	.wrapper{
-		position: fixed;
-		top: 0;
+    .navBar li {
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .wrapper{
+        position: fixed;
+        top: 0;
 
-		right: -100%;
-		height: 100%;
-		width: 100%;
-		background: #95261F;
-		Z-INDEX: 100;
-		transition: all 0.6s ease-in-out;
-	}
-	#active:checked ~ .wrapper{
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: #95261F;
+        Z-INDEX: 100;
+        transition: all 0.6s ease-in-out;
+    }
+    #active:checked ~ .wrapper{
 
-		right:0;
-	}
-	.menu-btn{
-		position: absolute;
-		z-index: 200;
-		right: 20px;
+        right:0;
+    }
+    .menu-btn{
+        position: absolute;
+        z-index: 200;
+        right: 20px;
 
-		top: 20px;
-		height: 50px;
-		width: 50px;
-		text-align: center;
-		line-height: 50px;
-		border-radius: 50%;
-		font-size: 20px;
-		cursor: pointer;
-		transition: all 0.3s ease-in-out;
-	}
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
 
     .menu-btn span,
@@ -825,21 +807,21 @@ input[type=button], input[type=submit] {
     }
 
 
-	/*Swapping images*/
-	#mainPicture {
-		background-image: url("../includes/pictures/oui cafe mobile.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		z-index: 50;
-		grid-column: 1/7;
-		justify-content: center;
-		display: flex;
-	}
-	
-	#ouiCaffeImg {
-		display: none;
-	}
-	
+    /*Swapping images*/
+    #mainPicture {
+        background-image: url("../includes/pictures/oui cafe mobile.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 50;
+        grid-column: 1/7;
+        justify-content: center;
+        display: flex;
+    }
+
+    #ouiCaffeImg {
+        display: none;
+    }
+
 
 
 
@@ -853,6 +835,10 @@ input[type=button], input[type=submit] {
     #ourSpecialties {
         height: 60rem;
         margin-bottom: 5rem;
+    }
+
+    .h2Title{
+        font-size: 2rem;
     }
 
     #specialTitle {
@@ -961,7 +947,7 @@ input[type=button], input[type=submit] {
         color: #EDE5BB;
         /* justify-content: center; */
         margin-bottom: auto;
-        margin-top: 39rem;
+        margin-top: 36rem;
         /* align-self: flex-end; */
         display: inline-block;
 
@@ -1070,71 +1056,60 @@ input[type=button], input[type=submit] {
 
     }
 
+
     #formContainer {
 
         background-color: rgba(237, 229, 187, .7);
-        color: #95261F;
+        max-height: 40rem;
         width: 100%;
+        margin-top: 7rem;
 
         align-items: center;
         justify-content: space-evenly;
         justify-self: center;
 
     }
-
-    #newsText{
-        width: 75%;
-    }
-
     #newsText > h1 {
+
         color: #95261F;
         font-size: 2rem;
         text-align: center;
     }
 
     #newsText > p {
+
         color: #95261F;
         font-size: 1.1rem;
         text-align: center;
     }
-
-    form{
-        width: 75%;
-        height: 50%;
-        margin: 0;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     input[type=text], input[type=email] {
-        width: 90%;
-        padding: 0.25rem 0.25rem;
-        margin: 0.75rem 0.75rem;
+        width: 75%;
+        padding: 0.6rem 0.6rem;
+        margin: 1rem 1rem;
         background-color: #95261F;
         color: #EDE5BB;
 
-        font-size: 4vw;
     }
 
     input[type=button], input[type=submit] {
         width: 100%;
         background-color: #95261F;
         color: #EDE5BB;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
         cursor: pointer;
 
-        font-size: 4vw;
     }
 
     ::placeholder {
         color: #EDE5BB;
         font-size: 1.3rem;
+    }
+
+    input[type=submit] {
+        font-size: 1em;
     }
 }
 
@@ -1197,33 +1172,33 @@ input[type=button], input[type=submit] {
         margin-bottom: 5rem;
     }
 
-#menuContainer{
-    background-color: #EDE5BB;
-    background-image: none;
-    height: 1400px;
-    background-repeat: no-repeat;
-    grid-column: 1/7;
-    display: flex;
-}
+    #menuContainer{
+        background-color: #EDE5BB;
+        background-image: none;
+        height: 1400px;
+        background-repeat: no-repeat;
+        grid-column: 1/7;
+        display: flex;
+    }
 
-#menuPage >h1{
-    display: none;
-}
+    #menuPage >h1{
+        display: none;
+    }
 
-#menuPage .box {
+    #menuPage .box {
         background-image: url("../OUI pictures/eiffel tower.png");
         background-size: cover;
         height: 865px;
         margin-top: 6rem;
         width: 300px;
         margin-left: 0%;
-}
+    }
 
-#menuPage >h2{
-    font-size: 30px;
-}
+    #menuPage >h2{
+        font-size: 30px;
+    }
 
-.euros{
+    .euros{
         display: flex;
         position: relative;
         bottom: 229px;
@@ -1232,9 +1207,9 @@ input[type=button], input[type=submit] {
         list-style: none;
         left: 200px;
         font-size: 15px;
-}
+    }
 
-.euros1{
+    .euros1{
         display: flex;
         position: relative;
         left: 201px;
@@ -1242,8 +1217,8 @@ input[type=button], input[type=submit] {
         bottom: 290px;
         list-style: none;
         font-size: 14px;
-}
-#menuPage button {
+    }
+    #menuPage button {
         background-color: #EDE5BB;
         position: relative;
         font-size: 25px;
@@ -1252,6 +1227,83 @@ input[type=button], input[type=submit] {
         bottom: 298px;
         color: #95261F;
         font-family: Caveat;
+    }
+
 }
 
+
+
+/*4k*/
+
+
+@media screen and  (min-width: 3000px) {
+
+
+    #menuTitle {
+        font-size: 5rem;
+        grid-column: 4/7;
+    }
+
+    #menuPage .box {
+
+        height: 1440px;
+    }
+    #menuPage h2 {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .food {
+
+        font-size: 0.8vw;
+    }
+
+    .euros {
+
+        font-size: 0.8vw;
+        bottom: 350px;
+    }
+
+    #drinks{
+        padding-top: 7rem;
+    }
+
+    .drinks {
+
+        font-size: 0.8vw;
+    }
+
+    .euros1 {
+
+        font-size: 0.8vw;
+        bottom: 468px;
+    }
+
+
+    #menuPage button{
+        background-color: #EDE5BB;
+        position: relative;
+        font-size: 50px;
+        left: 115px;
+        width: 280px;
+        bottom: 380px;
+        color: #95261F;
+        font-family: Caveat;
+    }
+
+
+
+    #menuContainer {
+        height: 130rem;
+    }
+
+    #vide {
+        height: 110rem;
+        grid-column: 3/6;
+    }
+    .coffeevideo > h1 {
+        text-align: center;
+        color: #95261F;
+        font-size: 7rem;
+    }
 }
